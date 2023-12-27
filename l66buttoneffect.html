@@ -1,0 +1,119 @@
+<!-- 16 October -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Button Effect</title>
+
+  <!-- fontawesome cdnjs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style type="text/css">
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 100vh;
+
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .btn {
+      width: 200px;
+
+      padding: 20px 50px;
+
+      /* background-color: green; */
+      color: #fff;
+
+      border: none;
+      border-radius: 40px;
+      outline: none;
+
+      position: relative;
+
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+
+      cursor: pointer;
+
+      overflow: hidden;
+    }
+
+    .wave {
+      width: 200px;
+      height: 200px;
+
+      background: blue;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      transition: all 1s;
+    }
+
+    .btn .wave::before,
+    .btn .wave::after {
+      content: "";
+      width: 200%;
+      height: 200%;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .btn .wave::before {
+      background-color: rgba(0, 0, 0, 1);
+      border-radius: 50%;
+
+      animation: mywave 5s linear infinite;
+    }
+
+    .btn .wave::after {
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 40%;
+
+      animation: mywave 5s linear infinite;
+    }
+
+    @keyframes mywave {
+      from {
+        transform: translate(-25%, -90%) rotate(0deg);
+      }
+
+      to {
+        transform: translate(-25%, -90%) rotate(360deg);
+      }
+    }
+
+    .btn span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn:hover .wave {
+      top: -30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button type="button" class="btn">
+    <span>Hover Me</span>
+    <em class="wave"></em>
+  </button>
+</body>
+
+</html>
+
+<!-- 16WV -->

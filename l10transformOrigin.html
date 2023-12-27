@@ -1,0 +1,85 @@
+<!-- 18 july -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Transform Origin</title>
+
+  <style type="text/css">
+    * {
+      font-family: Arial;
+    }
+
+    body {
+      height: 100vh;
+
+      /* display: flex;
+        justify-content: center;
+        align-items: center; */
+
+      display: grid;
+      place-items: center;
+    }
+
+    div img {
+      width: 300px;
+
+      transition: transform 2s linear;
+
+      /* Center = Default */
+      /* transform-origin: center; */
+
+      /* transform-origin: top; */
+      /* (or) top center */
+
+      /* transform-origin: bottom; */
+      /* (or) bottom center */
+
+      /* transform-origin: left; */
+      /* (or) left center */
+
+      /* transform-origin: right; */
+      /* (or) right center */
+
+
+      /* transform-origin: left top; */
+      /*  left bottom |right top | right bottom */
+
+      /* left = 0 */
+      /* transform-origin: 0; */
+
+      /* center = 50% */
+      /* transform-origin: 50%; */
+
+      /* right = 100% */
+      /* transform-origin: 100%; */
+
+      /* transform-origin: 0px; */
+      /* transform-origin: 100px; */
+      /* transform-origin: 400px; */
+
+      /* transform-origin: 0 0; */
+      /* transform-origin: 0 50%; */
+      /* transform-origin: 50% 50%; */
+      /* transform-origin: 200px 250px; */
+      /* transform-origin: 30% 50%; */
+    }
+
+    div img:hover {
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <img src="./img/cutedog.jpg" alt="Cute dog photo" title="cute dog" />
+  </div>
+</body>
+
+</html>
+
+<!-- 18TO -->

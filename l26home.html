@@ -1,0 +1,96 @@
+<!-- 16 August -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Exercise</title>
+  <style type="text/css">
+    * {
+      perspective: 600px;
+
+    }
+
+    body {
+      font-family: sans-serif;
+      font-size: 1.2rem;
+
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 500px;
+      background-color: #f0f0f0;
+    }
+
+    .div1 {
+      width: 250px;
+      height: 100px;
+      background: linear-gradient(rgb(48, 48, 48), silver);
+      border: 1px solid #000;
+      box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.5);
+
+      margin: auto;
+      padding: 10px;
+
+      position: relative;
+    }
+
+    .div2 {
+      width: 200px;
+      height: 100px;
+      background: linear-gradient(rgb(48, 48, 48), silver);
+
+      border: 1px solid #000;
+      box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.5);
+
+      padding: 50px;
+
+      transform: rotateX(45deg);
+
+      position: absolute;
+      left: -17px;
+      top: -100%;
+
+      z-index: 10;
+    }
+
+    .div3 {
+      width: 50px;
+      height: 100px;
+      background: conic-gradient(silver 50%, grey 0% 100%);
+
+      border-left: 1px dotted #000;
+      border-right: 1px dotted #000;
+
+      position: absolute;
+      left: 60%;
+      bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="div1">
+
+      <div class="div2"></div>
+      <div class="div3"></div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+<!-- 16HM -->

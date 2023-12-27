@@ -1,0 +1,89 @@
+<!-- 19 july -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Transform with Translate</title>
+
+  <style type="text/css">
+    * {
+      font-family: Arial;
+    }
+
+    .container {
+      width: 1200px;
+      margin: 3rem 0;
+
+      /*			rem(root element's font size) 1rem = 16px*/
+      background-color: gray;
+    }
+
+    .container .square {
+      width: 150px;
+      height: 50px;
+      background-color: darkred;
+      color: #fff;
+      font-size: 20px;
+
+      text-align: center;
+      line-height: 50px;
+
+      border-radius: 4px;
+
+      transition-property: transform;
+      transition-duration: 3s;
+      transition-timing-function: linear;
+    }
+
+    #translate:hover {
+      /* transform: translate(300px); */
+      /* transform:translate(-150px) */
+      transform: translate(100%);
+    }
+
+    #translatex:hover {
+      /* transform: translateX(300px); */
+      /* transform:translate(-150px) */
+      transform: translateX(100%);
+    }
+
+    #translatey:hover {
+      /* transform: translateY(300px); */
+      /* transform:translate(-150px) */
+      /* transform: translateY(-100px); */
+      /* transform: translateY(-100%); */
+      transform: translateY(100%);
+    }
+
+    #translatexy:hover {
+      /* transform: translate(300px, 0); */
+      /* transform: translate(0, 100px); */
+      /* transform: translate(100%, 50%); */
+      /* transform: translate(-100%, -100%); */
+      transform: translate(100%, -100%);
+
+      /* transform: translateX(100%);
+      transform: translateY(-100%); */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="translate" class="square">DIV 1</div>
+  </div>
+  <div class="container">
+    <div id="translatex" class="square">DIV 2 X</div>
+  </div>
+  <div class="container">
+    <div id="translatey" class="square">DIV 3 Y</div>
+  </div>
+  <div class="container">
+    <div id="translatexy" class="square">DIV 4 XY</div>
+  </div>
+</body>
+
+</html>

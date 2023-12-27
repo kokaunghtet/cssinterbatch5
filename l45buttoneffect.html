@@ -1,0 +1,61 @@
+<!-- 6 September -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Button Effect</title>
+
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn {
+      width: 200px;
+      height: 60px;
+
+      background: linear-gradient(60deg,
+          blue,
+          skyblue,
+          blue,
+          skyblue);
+      background-size: 300%;
+      color: #fff;
+
+      border: none;
+      border-radius: 50px;
+
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+
+      font-size: 20px;
+
+      cursor: pointer;
+
+      transition: all .5s;
+    }
+
+    .btn:active {
+      box-shadow: 0 1px 15px rgba(0, 0, 0, 0.4);
+      transform: translateY(4px);
+    }
+
+    .btn:hover {
+      /* background-position: center; */
+      background-position: right;
+    }
+  </style>
+</head>
+
+<body>
+  <button type="button" class="btn">Hover Me</button>
+</body>
+
+</html>
+
+<!-- 6HM -->

@@ -1,0 +1,93 @@
+<!-- 27 September -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Button Effect</title>
+
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+      height: 90vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn {
+      padding: 12px 40px;
+
+      background-color: steelblue;
+      color: #fff;
+
+      font-size: 22px;
+      text-transform: uppercase;
+
+      border: none;
+
+      cursor: pointer;
+
+      position: relative;
+    }
+
+    .btn::before {
+      content: "";
+
+      width: 24px;
+      height: 24px;
+
+      background-color: red;
+
+      border-left: 2px solid steelblue;
+      border-top: 2px solid steelblue;
+
+      position: absolute;
+      left: -5px;
+      top: -5px;
+    }
+
+    .btn::after {
+      content: "";
+
+      width: 24px;
+      height: 24px;
+
+      background-color: red;
+
+      border-right: 2px solid steelblue;
+      border-bottom: 2px solid steelblue;
+
+      position: absolute;
+      right: -5px;
+      bottom: -5px;
+    }
+
+    .btn:hover::before {
+      /* substract 3px instead of 5px because we set 2px to border. Border px need to be counted */
+      left: calc(100% - 24px + 3px);
+
+      border-left: none;
+      border-right: 2px solid steelblue;
+    }
+
+    .btn:hover::after {
+      right: calc(100% - 24px + 3px);
+
+      border-right: none;
+      border-left: 2px solid steelblue;
+    }
+
+    .btn::before,
+    .btn::after {
+      transition: all .3s;
+    }
+  </style>
+</head>
+
+<body>
+  <button type="button" class="btn">Hover Me</button>
+</body>
+
+</html>

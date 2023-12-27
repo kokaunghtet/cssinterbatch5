@@ -1,0 +1,115 @@
+<!-- 25 July  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Area</title>
+  <style type="text/css">
+    body {
+      height: 110vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 1200px;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 5px;
+
+      grid-template-areas:
+        "one one one"
+        "two two three"
+        "four five five"
+        "six seven eight"
+        " nine nine eight"
+        "ten ten eight"
+      ;
+    }
+
+    .container>* {
+      min-height: 100px;
+    }
+
+    .container div:nth-of-type(even) {
+      background-color: steelblue;
+    }
+
+    .container div:nth-of-type(odd) {
+      background-color: skyblue;
+    }
+
+    .div1 {
+      grid-area: one;
+    }
+
+    .div2 {
+      grid-area: two;
+
+    }
+
+    .div3 {
+      grid-area: three;
+
+    }
+
+    .div4 {
+      grid-area: four;
+
+    }
+
+    .div5 {
+      grid-area: five;
+
+    }
+
+    .div6 {
+      grid-area: six;
+
+    }
+
+    .div7 {
+      grid-area: seven;
+
+    }
+
+    .div8 {
+      grid-area: eight;
+
+    }
+
+    .div9 {
+      grid-area: nine;
+    }
+
+    .div10 {
+      grid-area: ten;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="div1">This is DIV 1</div>
+    <div class="div2">This is DIV 2</div>
+    <div class="div3">This is DIV 3</div>
+    <div class="div4">This is DIV 4</div>
+    <div class="div5">This is DIV 5</div>
+    <div class="div6">This is DIV 6</div>
+    <div class="div7">This is DIV 7</div>
+    <div class="div8">This is DIV 8</div>
+    <div class="div9">This is DIV 9</div>
+    <div class="div10">This is DIV 10</div>
+  </div>
+</body>
+
+</html>
+
+<!-- 25GA -->

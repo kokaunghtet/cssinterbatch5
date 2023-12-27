@@ -1,0 +1,84 @@
+<!-- 24 july -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perspective Origin</title>
+
+  <style type="text/css">
+    * {
+      font-family: Arial;
+      perspective: 500px;
+    }
+
+    body {
+      height: 100vh;
+
+      display: grid;
+      place-items: center;
+    }
+
+    .container {
+      /* perspective: 500px; */
+
+      /* center = default */
+      perspective-origin: center;
+      /* perspective-origin: left; */
+      /* perspective-origin: right; */
+      /* perspective-origin: bottom; */
+
+      /* perspective-origin: left top; */
+      /* perspective-origin: left bottom; */
+      /* perspective-origin: right top; */
+      /* perspective-origin: right bottom; */
+
+      perspective-origin: 0;
+      /* left center */
+      perspective-origin: 0 0;
+      /* left top */
+      perspective-origin: 0 top;
+      /* left top */
+      perspective-origin: 0 bottom;
+      /* left bottom */
+      perspective-origin: 100% top;
+      /* right top */
+      perspective-origin: 100% bottom;
+      /* right bottom */
+
+    }
+
+    .container img {
+      width: 300px;
+
+      transition: transform 2s linear;
+    }
+
+    /* .container+img {
+      width: 300px;
+
+      transition: transform 2s linear;
+    } */
+
+    .container img:hover {
+      /* transform: translateZ(300px); */
+      transform: translateZ(200px);
+    }
+
+    /* .container+img:hover {
+      transform: translateZ(100px);
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="./img/cutedog.jpg" alt="dog">
+  </div>
+  <!-- <img src="./img/cutedog.jpg" alt="dog"> -->
+
+</body>
+
+</html>

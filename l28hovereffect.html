@@ -1,0 +1,108 @@
+<!-- 21 August -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hover Effect</title>
+
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+      height: 90vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    a {
+      padding: 40px 80px;
+
+      color: #000;
+      text-decoration: none;
+
+      font-size: 40px;
+
+      border: 5px solid #000;
+
+      position: relative;
+
+      overflow: hidden;
+    }
+
+    a::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+
+      background-color: steelblue;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      z-index: -1;
+
+      transform: rotate(90deg);
+      /* transform: rotate(-90deg); */
+      transform-origin: right bottom;
+
+      transition: .5s;
+    }
+
+    a:hover::before {
+      transform: rotate(0deg);
+    }
+
+    button {
+      padding: 20px 40px;
+
+      font-size: 25px;
+
+      background: none;
+      color: #000;
+
+      border: 3px solid #000;
+      border-radius: 10px;
+
+      position: relative;
+
+      overflow: hidden;
+    }
+
+    button::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+
+      background-color: steelblue;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      z-index: -1;
+
+      transform: rotate(90deg);
+      transform-origin: right bottom;
+
+      transition: 0.5s;
+    }
+
+    button:hover::before {
+      transform: rotate(0);
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#">Hover Me &rsaquo;</a>
+
+  <br>
+
+  <button type="button">Hover Me &rsaquo;</button>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!-- 31 July -->
+<!-- 2 August -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+  <style type="text/css">
+    body {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    table,
+    th,
+    td {
+      border: 2px solid #000;
+    }
+
+    table {
+      /* border-spacing: 20px; */
+      /* border-sapcing works together with border-collapse:seperate */
+
+      /* border-collapse: separate; is Default value*/
+
+      border-collapse: collapse;
+      /* border-collapse: separate; */
+    }
+
+    thead {
+      background-color: #c1c1c1;
+    }
+
+    tbody {
+      /* vertical-align: top; */
+      /* vertical-align: bottom; */
+      vertical-align: center;
+
+      /* text-align: left; */
+      /* text-align: right; */
+      text-align: center;
+    }
+
+    tr {
+      transition: all .5s;
+    }
+
+    tr:nth-of-type(even) {
+      background-color: #f1f1f1;
+    }
+
+    tr:hover {
+      background-color: #b3b3b3;
+    }
+
+    th,
+    td {
+      width: 100px;
+      height: 50px;
+      padding: 5px 20px;
+    }
+
+    td {
+
+      empty-cells: hide;
+      /*works with border-collapse:seperate;*/
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>N0.</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Aung Aung</td>
+          <td>18</td>
+          <td>Male</td>
+          <td>Yangon</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Aung Aung</td>
+          <td>18</td>
+          <td>Male</td>
+          <td>Yangon</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Aung Aung</td>
+          <td>18</td>
+          <td>Male</td>
+          <td>Yangon</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Aung Aung</td>
+          <td>18</td>
+          <td>Male</td>
+          <td>Yangon</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Aung Aung</td>
+          <td>18</td>
+          <td>Male</td>
+          <td>Yangon</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Aung Aung</td>
+          <td>18</td>
+          <td>Male</td>
+          <td>Yangon</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Aung Aung</td>
+          <td>18</td>
+          <td>Male</td>
+          <td>Yangon</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Aung Aung</td>
+          <td>18</td>
+          <td>Male</td>
+          <td>Yangon</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Aung Aung</td>
+          <td>18</td>
+          <td>Male</td>
+          <td>Yangon</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td></td>
+          <td>18</td>
+          <td></td>
+          <td>Yangon</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
+
+<!-- 31tb -->

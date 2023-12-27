@@ -1,0 +1,78 @@
+<!-- 4 September -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hover Effect</title>
+
+  <!-- fontawesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+      height: 90vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a {
+      width: 200px;
+
+      padding: 15px 0;
+
+      font-size: 24px;
+      text-decoration: none;
+
+      background-color: green;
+      color: #fff;
+
+      border-radius: 5px;
+
+      text-align: center;
+    }
+
+    a span {
+      position: relative;
+
+      transition: all .5s;
+    }
+
+    a span::after {
+      content: "\f118";
+      font-family: "Font Awesome 5 Free";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      opacity: 0;
+
+      transition: all .5s;
+    }
+
+    a:hover span {
+      padding-left: 30px;
+    }
+
+    a:hover span::after {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#">
+    Hover me
+    <span></span>
+  </a>
+</body>
+
+</html>
+
+<!-- 4EJ -->

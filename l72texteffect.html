@@ -1,0 +1,77 @@
+<!-- 23 October -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Text Effect</title>
+
+  <!-- fontawesome cdnjs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+
+      display: grid;
+      place-items: center;
+
+      height: 100vh;
+
+      background-color: #000;
+
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      background-image: url(./img/universe.jpeg);
+
+      animation-name: myani;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+
+      -webkit-background-clip: text;
+    }
+
+    .box h1 {
+      color: transparent;
+      font-size: 120px;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+
+      white-space: nowrap;
+
+      -webkit-text-stroke: 3px steelblue;
+    }
+
+    @keyframes myani {
+      from {
+        /*                 left top */
+        /*                   x y */
+        background-position: 0 0;
+
+      }
+
+      to {
+        background-position: 0 800px;
+        /* background-position: 800px 0; */
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h1>Hello Myanmar</h1>
+  </div>
+
+</body>
+
+</html>

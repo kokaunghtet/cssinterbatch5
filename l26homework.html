@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home Homework</title>
+
+  <style type="text/css">
+    * {
+      perspective: 500px;
+    }
+
+    body {
+      font-family: sans-serif;
+
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: #000;
+    }
+
+    .container {
+      width: 500px;
+      background-color: #f0f0f0;
+    }
+
+    .div1 {
+      width: 250px;
+      height: 100px;
+      margin: auto;
+      padding: 10px;
+
+      background: linear-gradient(silver, grey);
+
+      border: 1px solid black;
+      box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.5);
+
+      position: relative;
+    }
+
+    .div2 {
+      width: 200px;
+      height: 100px;
+      padding: 50px;
+
+      background: linear-gradient(silver, grey);
+
+      border: 1px solid black;
+      box-shadow: -5px 3px 10px rgba(0, 0, 0, 0.5);
+
+      transform: rotateX(45deg);
+
+      position: absolute;
+      top: -100%;
+      left: -16px;
+
+      z-index: 10;
+    }
+
+    .div3 {
+      width: 100px;
+      height: 100px;
+
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      transform: translate(-50%);
+
+      display: flex;
+    }
+
+    .div4,
+    .div5 {
+      flex-grow: 1;
+      background-color: #f0f0f0;
+
+      border: 1px solid black;
+
+      transition: all .5s;
+
+      position: relative;
+    }
+
+    .div4 {
+      box-shadow: -5px 3px 10px rgba(0, 0, 0, 0.5);
+
+      transform-origin: left center;
+    }
+
+    .div5 {
+      transform: rotateY(45deg);
+      transform-origin: right center;
+
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .div4:hover {
+      transform: rotateY(-45deg);
+    }
+
+    .div5:hover {
+      transform: rotate(0);
+    }
+
+    .doorknot {
+      width: 5px;
+      height: 5px;
+
+      background-color: rgb(80, 80, 80);
+
+      clip-path: circle();
+    }
+
+    .div4 .doorknot {
+      position: absolute;
+      top: 60%;
+      right: 3px;
+    }
+
+    .div5 .doorknot {
+      position: absolute;
+      top: 60%;
+      left: 3px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="div1">
+
+      <div class="div2"></div>
+
+      <div class="div3">
+
+        <div class="div4">
+          <div class="doorknot"></div>
+        </div>
+        <div class="div5">
+          <div class="doorknot"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

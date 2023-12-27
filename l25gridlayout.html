@@ -1,0 +1,138 @@
+<!-- 16 August -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout</title>
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+      font-size: 1.5rem;
+
+      height: 150vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 1200px;
+      height: 800px;
+      background-color: silver;
+
+      display: grid;
+      grid-template-columns: repeat(5, 100px);
+      grid-template-rows: repeat(5, 100px);
+      grid-gap: 10px;
+    }
+
+    .container div:nth-of-type(odd) {
+      background-color: steelblue;
+    }
+
+    .container div:nth-of-type(even) {
+      background-color: skyblue;
+    }
+
+    .div1 {
+      grid-column-start: 1;
+      grid-column-end: 6;
+    }
+
+    .div2 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 5;
+    }
+
+    .div3 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 5;
+    }
+
+    .div4 {
+      grid-column-start: 5;
+      grid-column-end: 6;
+      grid-row-start: 2;
+      grid-row-end: 5;
+    }
+
+    .div5 {
+      grid-column-start: 1;
+      grid-column-end: 6;
+    }
+
+    .div1 {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .div2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .div3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .div4 {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .div5 {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="div1">
+      This is DIV 1.
+    </div>
+
+    <div class="div2">
+      <div>This is DIV 2</div>
+      <div>This is DIV 2</div>
+    </div>
+
+    <div class="div3">
+      <div>This is DIV 3</div>
+      <div>This is DIV 3</div>
+    </div>
+
+    <div class="div4">
+      <div>This is DIV 4</div>
+      <div>This is DIV 4</div>
+    </div>
+
+    <div class="div5">
+      <div>This is DIV 5</div>
+      <div>This is DIV 5</div>
+    </div>
+
+  </div>
+</body>
+
+</html>

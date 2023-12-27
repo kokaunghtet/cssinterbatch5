@@ -1,0 +1,96 @@
+<!-- 27 September -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Box Effect</title>
+
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+      height: 90vh;
+
+      background-color: #000;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+
+      text-align: center;
+      line-height: 200px;
+
+      position: relative;
+    }
+
+    .box::before {
+      content: "";
+
+      /* width: 100%;
+      height: 100%; */
+
+      border: 3px solid steelblue;
+      border-radius: 3px;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+
+      transition: all .5s;
+    }
+
+    .box::after {
+      content: "";
+
+      width: 100%;
+      height: 100%;
+
+      background-color: #fff;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+
+      transform: rotate(45deg);
+    }
+
+    .box:hover::before {
+      transform: rotate(45deg);
+    }
+
+    .box:hover::after {
+      transform: rotate(45deg) scale(0.7);
+    }
+
+    .box:hover {
+      color: steelblue;
+    }
+
+    .box,
+    .box::before,
+    .box::after {
+      transition: all .5s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    Hover Me
+  </div>
+</body>
+
+</html>

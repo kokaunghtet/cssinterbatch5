@@ -1,0 +1,101 @@
+<!-- 23 August -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hover Effect</title>
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+      height: 90vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      padding: 40px 80px;
+
+      font-size: 40px;
+
+      background: none;
+      color: transparent;
+
+      border: 5px solid #000;
+
+      position: relative;
+
+      overflow: hidden;
+    }
+
+    button::before {
+      content: "Hover Me";
+
+      width: 100%;
+      height: 100%;
+
+      background-color: steelblue;
+      color: #fff;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: all .5s;
+    }
+
+    button:hover::before {
+      content: "Me";
+      transform: translateX(50%);
+      justify-content: flex-start;
+      padding-left: 5px;
+    }
+
+    button::after {
+      content: "Press";
+
+      width: 100%;
+      height: 100%;
+
+      background-color: yellow;
+      color: #000;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      transition: all .5s;
+
+      z-index: -1;
+    }
+
+    button:hover::after {
+      transform: translateX(-50%);
+      padding-right: 5px;
+    }
+
+    button:active::before {
+      content: "You";
+    }
+
+    button:active::after {
+      content: "Thank";
+    }
+  </style>
+</head>
+
+<body>
+  <button type="button">Hover Me</button>
+</body>
+
+</html>

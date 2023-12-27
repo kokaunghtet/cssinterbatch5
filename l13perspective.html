@@ -1,0 +1,46 @@
+<!-- 19 july -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perspective</title>
+
+  <style type="text/css">
+    * {
+      font-family: Arial;
+    }
+
+    body {
+      height: 100vh;
+
+      display: grid;
+      place-items: center;
+    }
+
+    .container {
+      perspective: 500px;
+    }
+
+    .container img {
+      width: 300px;
+
+      transition: transform 2s linear;
+    }
+
+    .container img:hover {
+      /* transform: translateZ(300px); */
+      transform: translateZ(-700px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="./img/cutedog.jpg" alt="dog">
+  </div>
+</body>
+
+</html>

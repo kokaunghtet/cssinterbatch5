@@ -1,0 +1,102 @@
+<!-- 18 October -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Text Effect</title>
+
+  <!-- fontawesome cdnjs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 100vh;
+
+      background-color: #000;
+
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: transparent;
+
+      font-size: 40px;
+
+      text-transform: uppercase;
+      letter-spacing: 10px;
+
+      /* -webkit-text-stroke: 2px;
+      -webkit-text-stroke-color: red; */
+
+      -webkit-text-stroke: 2px red;
+
+      white-space: nowrap;
+
+      position: relative;
+    }
+
+    h1::before {
+      content: attr(text);
+
+      width: 0%;
+
+      color: yellow;
+
+      border-right: 5px solid yellow;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      overflow: hidden;
+
+      animation-name: myani;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      /* animation-direction: alternate; */
+    }
+
+    @keyframes myani {
+      0% {
+        width: 0;
+      }
+
+      50% {
+        width: 100%;
+      }
+
+      100% {
+        width: 0;
+      }
+
+      /* from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      } */
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 text="Thank you for shopping with us...">Thank you for shopping with us...</h1>
+
+</body>
+
+</html>
+
+<!-- 18TE -->

@@ -1,0 +1,76 @@
+<!-- 18 july -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Transform with scale</title>
+
+    <style type="text/css">
+      * {
+        font-family: Arial;
+      }
+
+      .container {
+        width: 1200px;
+        margin: 3rem 0;
+
+        /*			rem(root element's font size) 1rem = 16px*/
+        background-color: gray;
+      }
+
+      .container .square {
+        width: 150px;
+        height: 50px;
+        background-color: darkred;
+        color: #fff;
+        font-size: 20px;
+
+        text-align: center;
+        line-height: 50px;
+
+        border-radius: 4px;
+
+        transition-property: transform;
+        transition-duration: 3s;
+        transition-timing-function: linear;
+      }
+
+      #scale:hover {
+        /* scale(xy) */
+        /* transform: scale(0); */
+        transform: scale(2);
+      }
+
+      #scaleXY:hover {
+        /* transform: scale(0.5, 2); */
+        transform: scale(2, 0.5);
+      }
+
+      #scaleX:hover {
+        transform: scaleX(0.5);
+        /* transform: scaleX(2); */
+      }
+
+      #scaleY:hover {
+        transform: scaleY(0.5);
+        /* transform: scaleY(2); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="scale" class="square">DIV 1</div>
+    </div>
+    <div class="container">
+      <div id="scaleXY" class="square">DIV 2 X, Y</div>
+    </div>
+    <div class="container">
+      <div id="scaleX" class="square">DIV 3 X</div>
+    </div>
+    <div class="container">
+      <div id="scaleY" class="square">DIV 3 Y</div>
+    </div>
+  </body>
+</html>

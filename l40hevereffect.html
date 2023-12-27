@@ -1,0 +1,47 @@
+<!-- 29 August -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hover Effect</title>
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+      height: 90vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      padding: 40px 80px;
+
+      background: linear-gradient(40deg, red 40%,
+          black 60%);
+      background-size: 5%;
+      color: #fff;
+
+      font-size: 40px;
+
+      border: 5px solid #000;
+
+      transition: all 1s;
+    }
+
+    button:hover {
+      color: rgb(255, 160, 160);
+      background-size: 6%;
+      background-position: center;
+      /* background-position: right; */
+
+    }
+  </style>
+</head>
+
+<body>
+  <button type="button">Hover Me</button>
+</body>
+
+</html>
